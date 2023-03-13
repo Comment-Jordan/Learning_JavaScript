@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Scope determina la accesibilidad del código existen 2, Globales y Locales
+        //El Scope de Javascript te permite buscar desde adentro hacia afuera de una función, pero no puede buscar de afuera hacia adentro
+        //Adentro hacia afuera
+        //El scope de Javascript se refiere al alcance que una variable puede tener
+        //Otro factor a tomar en cuenta es que una variable local puede sobreescribir a una variable global que tenga el mismo nombre
+
+        //Global
+        var variable_global="Esto es una variable local";
+        var imprime= function()
+        {
+            alert(variable_global);
+            variable_global="He modificado la variable porque es global";
+            alert(variable_global);
+
+
+            var variable_local="Esto es una variable local"; //SI LE QUITO EL VAR SE VOLVERA UNA VARIABLE GLOBAL
+            alert(variable_global)
+
+
+            var funcion_local=function()
+            {
+                var variable_local_en_funcion="Esto es una variable local dentro de una función local";
+                var variable_local="Me imprime a mi porque Javascript trabaja sobre niveles por lo que el nivel más cercano este este";                
+                
+                alert(variable_local_en_funcion);
+                alert(variable_local); //A pesar de que tiene el mismo nombre que la variable local ya que Javascript tranaja sobre niveles
+                
+            }
+            funcion_local();
+        }
+//        document.write(variable_local); //Esto marca error ya que es una variable local
+        imprime(); //Invoco a mi función aunque este dentro de una variable
+
+    </script>
+</body>
+</html>

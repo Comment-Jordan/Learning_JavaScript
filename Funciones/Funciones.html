@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Las funciones debo de verlo como valores
+
+        function mi_funcion() //Palabra reservada, parametros (sin parametros por el momento)
+        {
+            //Instrucciones
+            document.write("Esto es una función");
+        }
+        mi_funcion();
+
+        document.write("<br>")
+
+        function imprimiendo_nombre()
+        {
+            var nombre=prompt("Ingresa nombre: ")
+            document.write("Nombre: ",nombre);
+        }
+        imprimiendo_nombre();
+
+        document.write("<br>");
+
+        function suma(num1, num2)
+        {
+            var resultado= num1+num2;
+            return resultado    //Return rompe el bloque de código
+        }
+
+        document.write("La suma es: ",suma(15,15));
+
+    </script>
+</body>
+</html>

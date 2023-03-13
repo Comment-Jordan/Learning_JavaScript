@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Tipos de datos en JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        //Recordemos que para definir el tipo de dato de una variable en javascript debemos de asinarselo en el valor que le asignemos
+
+        //Númerico
+        var numero1=500; //Estos pueden ser enteros o decimales
+
+        //Cadenas
+        var cadena1="Esto es una cadena";
+
+        //Booleanos
+        var boleano=true;
+
+        //Undefined
+        var indefinido; //Se le puede llamar una variable sin asignar
+
+        //Null
+        var nulo=null; //Sirve para quitar el valor a una variable
+
+        //Object
+        var objeto={nombre:"Jordan", edad:22}; //Representan un conjunto de propiedades y métodos algo así como diccionarios en python
+
+        //Array
+        var arreglo=[1,"Texto1", true, null]; //Es una lista de elementos que al igual que en python no es necesarios usar un solo tipo de dato dentro del arreglo, puede ser una colección de datos
+
+        //Functions
+        function sumar(a, b){return a+b;} //Representa un bloque de código que puede ser llamado varias veces
+
+        //Symbols
+        const obj = {
+            
+            [Symbol("privado")]: "no se puede acceder desde fuera del objeto"
+            
+        };
+        console.log(obj[Symbol("privado")]); //Representan valores inmutables y unicos que se pueden usar como identificadores de propiedades de objetos    
+
+        //BigInt
+        //Representan números grandes que superan el número límite de los enteros, no se pueden hacer operaciones con números decimales
+        var big_num1 = 1234567890123456789012345678901234567890n; //Así se creo un bigint colocando una n al final del número
+        var big_num2 = BigInt("1234567890123456789012345678901234567890"); //Pero también se pueden crear apartir de una cadena con ayuda de la función BinInt;
+
+    </script>
+
+
+</body>
+</html>

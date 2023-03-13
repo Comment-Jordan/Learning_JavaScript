@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Arreglos en HTML</title>
+</head>
+<body>
+    <script>
+        var arreglo=["Texto dentro de un arreglo y mostrado en consola",3,1.5, true] //Aceptan cualquier tipo de valor ya sea combinado al igual que en python
+
+        //No necesitamos definir el tamaño del arreglo, lo que los vuelve más dinámicos
+        //Podemos acceder a ellos indicando el índice del arreglo
+        console.log(arreglo[0]);
+
+        //Métodos y propiedades para los arreglos
+        var arreglo2=["Esto ","es ","un ","arreglo ","c:"];
+        console.log("Esto es el arreglo original: ",arreglo2);
+
+        //----------PROPIEDADES----------
+        
+        //Longitud total del arreglo
+        arreglo2.length;
+        console.log(arreglo2.length);
+
+        //Conocer el contructor de un arreglo
+        console.log("Con esto se construyo nuestro arreglo",arreglo2.constructor)        
+
+
+        //----------MÉTODOS----------
+
+        //Agregar elemento al final de un arreglo
+        arreglo2.push(" ","Estoy ", "agregando ", "más ","elementos ", "al ","arreglo")//Aqui puedes agregar más de un elemento directamente
+        
+        console.log(arreglo2);
+        console.log(arreglo2.length);
+
+        //Eliminar el último elemento de un arreglo
+        console.log("Arreglo antes de ser modificado",arreglo2);
+        arreglo2.pop();
+        console.log(arreglo2);
+
+        //Concatenar dos arreglos
+        var arreglo_concatenado=arreglo.concat(arreglo2);
+
+        console.log(arreglo_concatenado)
+
+
+        //Agregar un elemento entre cada arreglo
+        var join_arreglo1=[1,2,3,4];
+
+        document.write(join_arreglo1.join(":"));
+        console.log(join_arreglo1.join(":"))
+
+        //Ordenar un arreglo alfabeticamente
+
+        var desordenados=["Z","S","C","A",2,0,1,100000,3,1000000,"a","z","c"];
+        var ordenados=desordenados.sort();
+
+        console.log(ordenados);
+        
+    </script>
+</body>
+</html>

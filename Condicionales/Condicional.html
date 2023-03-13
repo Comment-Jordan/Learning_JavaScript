@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Condicional If</title>
+</head>
+<body>
+
+    <script>
+                
+        /*   
+            Los operadores lógicos compatibles con Javascript son:
+                > mayor que
+                < menor que
+                == igual que
+                != diferente que
+                <= menor o igual que
+                >= mayor o igual que
+        */    
+       
+        var a=prompt("Ingrese valor de A");        
+        var b=prompt("Ingrese valor de B");
+
+        //Sentencia If, funciona practicamente igual que en otros lenguajes de programación
+        if (a<b)
+        {
+            document.write("El valor de A es mayor a B: ", a);
+        }
+        else if(b<a)
+        {
+            document.write("El valor de B es mayor a A: ",b); //El else if igual funciona de una manera muy parecida en javascript
+        }
+        else
+        {
+            document.write("False?");
+        }
+    </script>
+
+</body>
+</html>
