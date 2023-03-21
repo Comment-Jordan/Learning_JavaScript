@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        var nombre="Jordan Pérez Bravo";
+        
+        var longitud=nombre.length;
+        document.write(longitud); //Longitud de una cadena
+        
+        document.write("<br>")
+
+        var cadena_cortada=nombre.substring(3); //Corta los caráteres hasta del argumento dado
+        document.write(cadena_cortada);
+
+        document.write("<br>")
+        
+        var cadena_cortada_2=nombre.substr(0,3); //Corta apartir de primer arg hasta el segundo arg
+        document.write(cadena_cortada_2);
+
+        document.write("<br>");
+
+        var indice=nombre.indexOf("z"); //Retorna el índice de un carácter de una cadena
+        //Si le ponemos un segundo arg indicara apartir de que indice queremos que comience a buscar
+        document.write(indice);
+
+        document.write("<br>")
+
+        var indice_invertido=nombre.lastIndexOf("J"); // Parecido al IndexOf pero este método comienza a contar de atrás hacia adelante
+        document.write(indice_invertido);
+
+        document.write("<br>")
+
+        var metodo_replace=nombre.replace(nombre, "Esto es un nuevo texto"); //Remplaza todo el contenido de una cadena o una variable dad en el primer arg
+        document.write(metodo_replace);
+
+        document.write("<br>")
+
+        var mayus=nombre.toUpperCase(); //Para convertir toda una cadena a mayúsculas
+        document.write(mayus);
+
+        document.write("<br>")
+
+        var minus=nombre.toLowerCase(); //Para convertir toda una cadena a minúsculas
+        document.write(minus);
+
+    </script>
+</body>
+</html>
